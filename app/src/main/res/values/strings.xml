@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SearchProject</string>
+    <string name="please_use">Please use the "search" icon to search for the events on the application.</string>
+    <string name="favorite_string">Click on the \"heart\" icon to favorite the event</string>
+    <string name="favorite">Favorite</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
+</resources>

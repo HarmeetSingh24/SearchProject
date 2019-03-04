@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="singh.harmeet.com.searchproject1.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_tool"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/relative_text"
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/two_hundred_dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/pointer_search" />
+
+        <TextView
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/imageView"
+            android:text="@string/please_use"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/twenty_five_dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@id/tool_bar"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
